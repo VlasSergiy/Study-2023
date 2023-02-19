@@ -1,3 +1,5 @@
-const h = document.getElementById("myHeader").textContent;
+// const a = 1;
 
-alert(h);
+// const h = document.getElementById("myHeader").textContent;
+
+// alert(h);
