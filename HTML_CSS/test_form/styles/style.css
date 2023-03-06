@@ -5,7 +5,12 @@ body {
 
 #personalForm {
     width: 45%;
-    min-width: 400px;
+    min-width: 435px;
     border: 2px solid black;
     padding: 5px 10px 20px 10px;
+    background-color:blanchedalmond;
+}
+
+label {
+    vertical-align: top;
 }
