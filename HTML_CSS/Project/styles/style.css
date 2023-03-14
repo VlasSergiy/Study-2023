@@ -87,7 +87,7 @@ header {
     color: #FFFFFF;   
 }
 
-.section-1 {
+.section__main {
 
     position: absolute;
     width: 760px;
@@ -101,7 +101,7 @@ header {
     border-color: #FFFFFF;
 }
 
-.section-1 h1 {
+.section__main h1 {
 
     position: absolute;
     width: 300px;
@@ -119,7 +119,7 @@ header {
     color: #351F21;
 }
 
-.section-1 p{
+.section__main p{
 
     position: absolute;
     width: 303px;
@@ -136,7 +136,7 @@ header {
     color: #351F21;
 }
 
-.section-1 figure img{
+.main__background img{
 
     position: absolute;
     width: 360px;
