@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Практичне завдання</title>
+</head>
+<body>
+    <div class="conteiner">
+        <header class="header">
+            <div class="header__conteiner">
+                <div class="header__content">
+                    <a class="header__icon" href="#"><img src="images/icon.svg" alt="logo"></a>
+                    <h1>Армія Дронів</h1>
+                    <button class="button button__header">Зробити внесок</button>
+                </div>
+                <!-- <img class="header__back" src="images/header.png" alt="header_img"> -->
+                <img class="header__dron" src="images/header_dron1.png" alt="dron">
+            </div>
+        </header>
+            
+        <main>
+            <section>
+                <h2>Мрієте, щоб ЗСУ стали ще сильніше, а палало аж до москви?</h2>
+                <p>Кожен день наближає Україну до перемоги. Наскільки довгим буде цей шлях – залежить від нас.
+                    Допоможіть зібрати кошти на дрони. Хлопці обіцяють – результат вам сподобається! Адже в кожного з нас єдине
+                    бажання, щоб
+                    зло на нашій землі було знищено. Ваш внесок важливий. Зробіть його просто зараз!</p>
+                <div>
+                    <img src="images/dron_1.jpg" alt="dron_1">
+                    <img src="images/dron_2.jpg" alt="dron_2">
+                    <img src="images/dron_3.jpg" alt="dron_3">
+                </div>
+            </section>
+            <section>
+                <h2>Зробити благодійний внесок</h2>
+            
+                <form action="#">
+                    <div>
+                        <p>Оберіть фонд</p>
+                        <label>
+                            <input type="radio" name="foundation" value="SerhiiPritulaFoundation">
+                            <span>Фонд Сергія Притули</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="foundation" value="ComeBackAliveFoundation">
+                            <span>Повернись живим</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="foundation" value="NBUAccount">
+                            <span>Рахунок НБУ</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="foundation" value="UNITED24">
+                            <span>UITED24</span>
+                        </label>
+                    </div>
+            
+                    <div>
+                        <div>
+                            <label>Введіть номер картки*
+                                <input type="text" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </label>
+                            <div>
+                                <label>Термін дії*
+                                    <input type="text" name="cardExpire" placeholder="XX / XX" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>CVV
+                                    <input type="text" name="cardCVV" placeholder="XXX" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Введіть ім'я на картці
+                                <input type="text" name="cardOwner" placeholder="Ваше ім'я" required>
+                            </label>
+                            <button type="submit">Підтвердити внесок</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+            
+        <footer>
+            <p>Створено як навчальний проєкт курсу "Знайомство з IT: тестдрайв професій" від Prometheus.</p>
+            <p>Vlasenko Serhii</p>
+        </footer>
+    </div>
+</body>
+</html>
