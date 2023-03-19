@@ -20,7 +20,7 @@
     font-family: "Rubik Regular";
 }
 
-.conteiner {
+.container {
     text-align: center;
     min-width: 1366px;
     margin: 0 auto;
@@ -58,7 +58,7 @@
     margin: 0 auto;
 }
 
-.header__conteiner {
+.header__container {
     position: relative;
     display: flex;
     width: 970px;
@@ -74,7 +74,6 @@
 
 .header__icon {
     display: block;
-    /* width: 104px; */
     margin-bottom: 105px;
 }
 
@@ -135,6 +134,7 @@
 }
 
 .main__images{
+    /* position: relative; */
     display: flex;
     justify-content: center;
 }
@@ -149,3 +149,169 @@
     margin: 0 20px;
 }
 
+.main__images::before{
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 95%;
+    background-color: #E3E6ED;
+    left: 0;
+    bottom: 150px;
+    z-index: -1;
+}
+
+.donate {
+    height: 320px;
+    margin: 0 auto;
+    padding: 0 104px;;
+    margin-bottom: 80px;
+}
+
+.donate h2{
+    font-family: "Rubik Medium";
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #212033;
+}
+
+.donate__form{
+    display: flex;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.donate__foundation{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.donate__foundation label{
+    position: relative;
+    width: 280px;
+    height: 36px;
+    line-height: 36px;
+    color: #12569B;
+}
+
+.donate__foundation :first-child,
+.donate__foundation :not(:last-of-type) {
+    margin-bottom: 11px;
+}
+
+input {
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type=radio] ~ span{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: transparent;
+    border: solid #12569B 1px;
+    cursor: pointer;
+}
+
+input[type=radio]:checked ~ span{
+    background-color: #E3E6ED;
+}
+
+input[type=radio] ~ span::after{
+    content:"";
+}
+
+input[type=radio]:checked ~ span::after{
+    content:"✓";
+    right: 30px;
+    position: absolute;
+}
+
+.donate__first__col{
+    width: 290px;
+    margin-right: 20px;
+}
+
+.donate__first__col > label{
+    margin-bottom: 22px;
+}
+
+.donate__first__col > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.donate__first__col > div label {
+    display: inline-block;
+    width: 130px;
+}
+
+.donate__first__col > div label > input {
+    margin-top: 11px;
+}
+
+.donate__second__col{
+    width: 280px;
+}
+
+.donate__card {
+    display: flex;
+    width: 570px;
+}
+
+.donate__card > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.donate__card label{
+    text-align: left;
+}
+
+.donate__card label > input {
+    height: 64px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid #12569B 1px;
+    margin-top: 11px;
+}
+
+.button__donate {
+    width: 280px;
+    height: 64px;
+}
+
+.footer {
+    padding-top: 40px;
+    font-family: 'Rubik Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+    height: 163px;
+    left: 0px;
+    background-color: #12569B;
+}
+
+.footer > p {
+    margin-bottom: 30px;
+}
